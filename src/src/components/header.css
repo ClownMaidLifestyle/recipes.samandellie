@@ -1,0 +1,19 @@
+#header{
+    background-color: beige;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: solid 2px; 
+    display:flex;
+}
+
+#title{
+    margin-left:2%;
+}
+
+#searchbar{
+    height:10%;
+    width: 20%;
+    margin-left: 23%;
+    margin-top:2rem;
+}
