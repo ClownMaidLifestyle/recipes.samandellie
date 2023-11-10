@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export default function Header() {
     const [searchValue, setSearchValue] = useState();
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
 
     function handleKeyPress(e){
         if (e.key === 'Enter'){
