@@ -1,5 +1,5 @@
 #header{
-    background-color: beige;
+    background-color: burlywood;
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,4 +16,11 @@
     width: 20%;
     margin-left: 23%;
     margin-top:2rem;
+}
+
+#login{
+    height:10%;
+    width: 5%;
+    margin-top:1.5rem;
+    margin-left: 30%;
 }

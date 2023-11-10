@@ -1,9 +1,11 @@
 import React from 'react'
 import './header.css'
+import Dropdown from './dropdown.js';
 import { useState } from 'react'
 
 export default function Header() {
     const [searchValue, setSearchValue] = useState();
+    const [toggle, setToggle] = useState(false);
 
     function handleKeyPress(e){
         if (e.key === 'Enter'){
@@ -23,6 +25,10 @@ export default function Header() {
         <div id="header">
             <h2 id="title">Sam and Ellie Recipes</h2>
             <input id="searchbar" type="text" placeholder='Find Recipes' onKeyDown={(event) => handleKeyPress(event)} onChangeCapture={(event) => handleSearchValue(event)}></input>
+            <button id="login" onClick={() => (setToggle(!toggle))}>Login</button>
+            <div>
+            {toggle && (<Dropdown></Dropdown>)}
+            </div>
         </div>
     )
 }
